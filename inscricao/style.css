@@ -1,0 +1,526 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    
+
+}
+
+
+/*caçalho*/
+
+.cabecalho {
+    padding-bottom: 2%;
+    width: 100%;
+    background-color: #fff;
+}
+
+.imagem-top {
+    display: flex;
+    width: 20%;
+
+}
+
+.imagem-top>img {
+    width: 50%;
+    
+
+
+}
+
+.coren-logo {
+    margin-top: 2%;
+    margin-left: 390%;
+    float: right;
+}
+
+.capacita-logo {
+    float: right;
+    margin-left: 2%;
+}
+
+/*------------------------------------------------------------*/
+/*nave*/
+body {
+    
+    background-image: url("imagem_projeto.jpg");
+    background-attachment: fixed;
+    background-size: 100% 100%;
+  }
+  
+
+.enrollment {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    background-color: #1AA8A4;
+    color: white;
+    width: 100%;
+    height: 60px;
+    margin-left: 0;
+    margin-bottom: 2%;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+}
+
+.enrollment>p {
+    font-size: 30px;
+    margin-left: 40%;
+    margin-top: 0.5%;
+    margin-bottom: 0.1%;
+}
+
+.enrollment>a {
+    font-size: 20px;
+    margin-bottom: 0.1%;
+    margin-top: 0.8%;
+    margin-left: 30%;
+    text-decoration: none;
+    color: #fff;
+}
+
+/*-------------------------------------------------------------*/
+/*conteudo*/
+.container {
+    display: flex;
+    justify-content: center;
+}
+
+/*-------------------------------------------------------------*/
+/*direita*/
+.blocoDireita {
+    float: left;
+    flex-direction: column;
+    margin-left: 10%;
+    margin-top: 2%;
+    width: 350px;
+    height: 400pX;
+}
+
+.inicializar {
+    font-size: 12px;
+    width: 100%;
+    height: 100%;
+}
+
+.dados {
+    padding: 5%;
+    background-color: #fff;
+    box-shadow: 1px 1px 6px black;
+    width: 100%;
+    height: 100%;
+    border-radius: 0.3rem;
+}
+
+.titulo>h1 {
+    color: rgb(3, 78, 153);
+    width: 110%;
+    margin-left: 2%;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    margin-bottom: 3%;
+}
+
+.list-dados>ul {
+    font-size: larger;
+    list-style: none;
+    width: 100%;
+    height: 100%;
+}
+
+.list-dados>ul>li {
+    margin-bottom: 3%;
+    border-bottom: 1px solid #bbb;
+}
+.list-dados>ul>.tirarborder{
+    border-bottom: none;
+}
+
+.list-dados>ul>li>div {
+    padding-top: 2%;
+    margin: 0%;
+    margin-bottom: 2%;
+}
+
+.list-dados>ul>li>div>h6 {
+    margin: 0%;
+    font-size: 16px;
+}
+
+.list-dados>ul>li>div>span {
+    font-size: 14px;
+
+}
+
+/*-------------------------------------------------------------*/
+/*esquerda*/
+
+.blocoEsquerda {
+    display: flex;
+    flex-direction: column;
+    width: 700PX;
+    height: 600px;
+    margin-left: -5%;
+    margin-bottom: 1%;
+
+}
+
+.formularioP {
+    background-color: #6c6c6c11;
+    width: 100%;
+    height: 100%;
+    box-shadow: 1px 1px 6px black;
+    margin-bottom: 2%;
+    border-radius: 0.3rem;
+}
+
+.formulario {
+    display: flex;
+    justify-content: center;
+
+}
+
+.formleft {
+
+    margin: 1%;
+    width: 300PX;
+    height: 100%;
+    padding: 2%;
+    float: left;
+
+}
+
+.formright {
+    float: right;
+    width: 300PX;
+    height: 100%;
+    padding: 2%;
+    margin-top: 1.1%;
+
+}
+
+.item>label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 2%;
+}
+
+.item>input {
+    margin-bottom: 2%;
+    padding: 0.4%;
+    width: 280px;
+    height: 24px;
+    border-radius: 0.3rem;
+    border: 0.01rem solid black;
+}
+.item>select{
+    margin-bottom: 2%;
+    padding: 0.4%;
+    width: 280px;
+    height: 24px;
+    border-radius: 0.3rem;
+    border: 0.01rem solid black;
+}
+
+
+#divEmpregado {
+    margin: 0;
+}
+
+.itemBotao {
+    margin-left: 83%;
+    width: 120px;
+    height: 40px;
+    box-shadow: 1px 1px 6px black;
+    border-radius: 0.3rem;
+
+}
+
+.botaoEnviar {
+    padding: 5%;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+}
+
+#secreta{
+    color: red;
+    margin-top: 1%;
+    margin-left: 65%;
+}
+
+/*-------------------------------------------------------------------------------*?
+/*rodapé*/
+.rodape {
+    width: 100%;
+    width: 100%;
+    padding: 0.4%;
+    background-color: #1AA8A4;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+
+    bottom: 0;
+    position: fixed;
+
+    text-align: center;
+
+}
+/*-------------------------------------------------------------------------------*?
+/*rodapé*/
+@media screen and (max-width:1260px) {
+    .blocoDireita {        
+        margin-left: 2%;     
+    }
+}
+@media screen and (max-width:1030px) {
+    .blocoDireita{        
+        display: none;     
+    }
+    .blocoEsquerda{
+        margin-top: 7.5%;
+    }
+}
+@media screen and (max-width:820px){
+
+    .blocoEsquerda {        
+        height: 900px;
+        margin-left: 1%;   
+    }
+    .item>label {
+       
+        margin-bottom: 5%;
+    }
+    
+    .item>input {
+        margin-bottom: 5%;
+        padding: 0.8%;
+        
+        
+    }
+    .item>select{
+        margin-bottom: 5%;
+        padding: 0.8%;
+       
+    }
+    
+}
+@media screen and (max-width:740px) {
+    
+    .blocoEsquerda{
+        margin-top: 2.5%;
+    
+    }
+    .formulario {
+        display: flex;
+        flex-direction: column;
+        justify-content:center;
+        align-items: center;   
+    }
+    .itemBotao{
+        margin-left: 56%;
+    }
+    .enrollment{
+       justify-content: center;
+       align-items: center;
+    }
+    .enrollment>p{
+        margin-left: -5%;        
+    }
+    .enrollment>a{
+        margin-left: 2%;
+       
+       
+    }
+    .enrollment>P{
+        margin-left: 20%;
+    }
+    .enrollment>a {
+        margin-left: 15%;
+    }
+    .blocoEsquerda {  
+        overflow-y:scroll;      
+        width: 600PX;
+        height: 600px;   
+    }
+    .formularioP{
+        overflow-y:scroll;
+    }
+    .formularioP::-webkit-scrollbar {
+
+        width: 12px;               /* width of the entire scrollbar */
+      }
+      
+      .formularioPa::-webkit-scrollbar-track {
+        background: #ccc;        /* color of the tracking area */
+      }
+      
+      .formularioP::-webkit-scrollbar-thumb {
+        
+        background-color: #6c63ff;    /* color of the scroll thumb */
+        border-radius: 50px;       /* roundness of the scroll thumb */
+        border: 3px solid #ccc;  /* creates padding around scroll thumb */
+      }
+      .formulario{
+        margin-left: 10%;
+      }
+
+      .item>label {
+        font-weight: bold;
+        display: block;
+        margin-bottom: 2%;
+    }
+    
+    .item>input {
+        margin-bottom: 2%;
+        padding: 0.4%;
+        width: 280px;
+        height: 24px;
+        border-radius: 0.3rem;
+        border: 0.01rem solid black;
+    }
+    .item>select{
+        margin-bottom: 2%;
+        padding: 0.4%;
+        width: 280px;
+        height: 24px;
+        border-radius: 0.3rem;
+        border: 0.01rem solid black;
+    }
+
+      .itemBotao{
+        margin-left: 68%;
+      }
+}
+
+@media screen and (max-width:414px){
+
+    .blocoEsquerda {  
+        overflow-y:scroll;      
+        width: 600PX;
+        height: 770px;   
+    }
+    .item>label {
+        font-weight: bold;
+        display: block;
+        margin-bottom: 2%;
+    }
+    
+    .item>input {
+        margin-bottom: 2%;
+        padding: 0.4%;
+        width: 280px;
+        height: 24px;
+        border-radius: 0.3rem;
+        border: 0.01rem solid black;
+    }
+    .item>select{
+        margin-bottom: 2%;
+        padding: 0.4%;
+        width: 280px;
+        height: 24px;
+        border-radius: 0.3rem;
+        border: 0.01rem solid black;
+    }
+    
+}
+@media screen and (max-width:390px){
+
+    .blocoEsquerda {  
+       
+        height: 720px;   
+    }
+    .item>label {
+        font-weight: bold;
+        display: block;
+        margin-bottom: 2%;
+    }
+    
+    .item>input {
+        margin-bottom: 2%;
+        padding: 0.4%;
+        width: 280px;
+        height: 24px;
+        border-radius: 0.3rem;
+        border: 0.01rem solid black;
+    }
+    .item>select{
+        margin-bottom: 2%;
+        padding: 0.4%;
+        width: 280px;
+        height: 24px;
+        border-radius: 0.3rem;
+        border: 0.01rem solid black;
+    }
+    
+}
+@media screen and (max-width:375px){
+
+    .blocoEsquerda {  
+        overflow-y:scroll;      
+        width: 600PX;
+        height: 540px;   
+    }
+    .item>label {
+        font-weight: bold;
+        display: block;
+        margin-bottom: 2%;
+    }
+    
+    .item>input {
+        margin-bottom: 2%;
+        padding: 0.4%;
+        width: 280px;
+        height: 24px;
+        border-radius: 0.3rem;
+        border: 0.01rem solid black;
+    }
+    .item>select{
+        margin-bottom: 2%;
+        padding: 0.4%;
+        width: 280px;
+        height: 24px;
+        border-radius: 0.3rem;
+        border: 0.01rem solid black;
+    }
+    .itemBotao{
+        margin-left: 62%;
+      }
+    
+}
+@media screen and (max-width:360px){
+
+    .blocoEsquerda {  
+        overflow-y:scroll;      
+        width: 600PX;
+        height: 600px;
+           
+    }
+    .item{
+        padding: 0;
+        margin: 0;
+        
+    }
+    .item>label {
+        margin-right: 0;                
+        margin-bottom: 1%;
+    }
+    
+    .item>input {
+
+        margin-bottom: 1%;
+        padding: 0.2%;
+        
+    }
+    .item>select{
+        margin-bottom: 2%;
+        padding: 0.2%;
+        
+    }
+    
+}
+
+
+

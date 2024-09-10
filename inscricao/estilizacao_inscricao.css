@@ -1,0 +1,332 @@
+/*
+#capacitaLogo{
+  float: left;
+  padding-left: 1%;
+  padding-top: 1%;
+  padding-bottom: 1%;
+}/*logo
+.enrollment{
+    text-align: center;
+    background-color:#1AA8A4;
+    padding-top: 1%;
+    padding-bottom: 1rem;
+    margin-top: 2%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 200%;
+    font-weight: bold;
+    color: white;
+}/*barra de inscrição
+
+#corenLogo{
+  padding-top: 1%;
+  padding-left: 3%;
+}/*coren logo
+
+main{
+    background-image: url("imagem_projeto.jpg");
+    background-attachment: fixed;
+    background-size: 100% 100%;
+}
+
+.text{
+  color: rgb(3, 78, 153);
+}
+
+#itemObrigatorioCpf{
+  border: 0.1rem solid black;
+  border-radius: 0.5rem;
+}
+
+#itemObrigatorioCategoria{
+  border: 0.1rem solid black;
+  border-radius: 0.5rem;
+}
+
+#itemObrigatorioNome{
+  border: 0.1rem solid black;
+  border-radius: 0.5rem;
+}
+
+#itemObrigatorioCoren{
+  border: 0.1rem solid black;
+  border-radius: 0.5rem;
+}
+
+#itemObrigatorioUF{
+  border: 0.1rem solid black;
+  border-radius: 0.5rem;
+}
+
+#itemObrigatorioCelular{
+  border: 0.1rem solid black;
+  border-radius: 0.5rem;
+}
+
+#itemObrigatorioTelefone{
+  border: 0.1rem solid black;
+  border-radius: 0.5rem;
+}
+
+#itemObrigatorioEndereco{
+  border: 0.1rem solid black;
+  border-radius: 0.5rem;
+}
+
+#itemObrigatorioNumero{
+  border: 0.1rem solid black;
+  border-radius: 0.5rem;
+}
+
+#itemObrigatorioBairro{
+  border: 0.1rem solid black;
+  border-radius: 0.5rem;
+}
+
+#itemObrigatorioCidade{
+  border: 0.1rem solid black;
+  border-radius: 0.5rem;
+}
+
+#itemObrigatorioUF2{
+  border: 0.1rem solid black;
+  border-radius: 0.5rem;
+}
+
+#itemObrigatorioCep{
+  border: 0.1rem solid black;
+  border-radius: 0.5rem;
+}
+
+#itemObrigatorioEmpregado{
+  border: 0.1rem solid black;
+  border-radius: 0.5rem;
+}
+
+#itemNaoObrigatorio{
+  border: 0.1rem solid black;
+  border-radius: 0.5rem;
+}
+
+.divisao{
+  display: flex;
+  flex-wrap: wrap;
+  flex-flow: row wrap;
+}
+
+#itemDivisao{
+  padding-left: 2rem;
+}
+
+#voltar{
+  float: right;
+  padding-right: 2rem;
+  font-size: medium;
+  padding-top: 0.8rem;
+  text-decoration: none;
+  color: white;
+}
+
+#blocoDireita{
+  border: 0.1rem solid black;
+  border-radius: 0.5rem;
+}
+
+header{
+  padding-top: 0.5rem;
+}
+
+main{
+  padding-bottom: 0;
+}
+
+#botao{
+  border: 0.1rem solid black;
+  border-radius: 0.5rem;
+}
+
+#enviar{
+  border: 0.1rem solid black;
+  border-radius: 0.5rem;
+  margin-top: 1rem;
+}
+
+.container{
+  display: flex;
+  flex-direction: row;
+}
+
+#direita{
+  float: right;
+  width: 30%;
+  padding-top: 3.5rem;
+  margin-right: 10%;
+}
+
+.formulario{
+  width: 50%;
+  float: left;
+}
+
+@media (max-width: 768px) {
+  /* Estilos aplicados quando a largura da tela é igual ou menor que 768px 
+  #capacitaLogo{
+    width: 40%;
+  }
+  #corenLogo{
+    width: 130%;
+    padding-left: 1rem;
+  }
+  header{
+    margin-bottom: 2%;
+  }
+  #main{
+    padding-right: 0;
+  }
+  #enrollment{
+    padding-top: 0;
+    padding-bottom: 0;
+    margin-top: 5rem;
+    font-size: 10%;
+  }
+  #direita {
+    width: auto;
+    padding-bottom: 0;
+    max-width: 130%;
+  }
+  #esquerda{
+    width: auto;
+    max-width: 130%;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  /* Estilos aplicados quando a largura da tela está entre 769px e 1024px 
+  
+}
+
+@media (min-width: 1025px) {
+  /* Estilos aplicados quando a largura da tela é igual ou maior que 1025px 
+  
+}
+*/
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+header {
+  /*inicio do header*/
+  padding: 2% 0;
+  margin-bottom: 3%;
+}
+
+.imagem-top {
+  width: 100%;
+  margin-bottom: 5%;
+}
+
+#capacitaLogo {
+  float: left;
+  padding-left: 1%;
+  padding-top: 1%;
+  padding-bottom: 1%;
+}
+
+#corenLogo {
+  /*fim do header*/
+  float: right;
+  padding-top: 1%;
+  padding-left: 3%;
+  padding-right: 3%;
+}
+
+.enrollment {
+  text-align: center;
+  background-color: #1AA8A4;
+  padding: 1.5% 0;
+  margin-top: 2%;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 200%;
+  font-weight: bold;
+  color: white;
+  margin-bottom: 2%;
+}
+
+#voltar {
+  float: right;
+  font-size: large;
+  margin-right: 2%;
+  padding: 0;
+  padding-top: 0.4%;
+  text-decoration: none;
+  color: white;
+}
+
+.background {
+  mar
+  background-image: url("imagem_projeto.jpg");
+  background-attachment: fixed;
+  background-size: 100% 100%;
+}
+
+.inicializar {
+  float: right;
+  text-align: center;
+  
+  background-color: aliceblue;
+  width: 30%;
+  border-radius: 2%;
+  box-shadow: 1px 1px 6px #111;
+  margin-right: 5%;
+  margin-top: 4.5%;
+  
+}
+
+.dados {
+  margin: 5%;
+}
+
+.rodape {
+  background-color: #1AA8A4;
+  text-align: center;
+  color: white;
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 1% 0;
+}
+
+.formulario {
+  width: 55%;
+
+  flex-direction: column;
+  overflow-y: scroll;
+  flex-wrap: nowrap;
+  max-height: 30rem;
+  padding-right: 5rem;
+
+  border-radius: 0.5%;
+  padding: 3.7%;
+  margin-left: 5%;
+  margin-bottom: 2%;
+  background-color: #00ffafaa;
+  box-shadow: 1px 1px 6px #111;
+  font-size: 12px;
+  text-indent: 20%;
+  text-justify: auto;
+}
+
+.formulario::-webkit-scrollbar {
+  width: 15px;
+}
+
+.formulario::-webkit-scrollbar-track {
+  background: #ccc;
+}
+
+.formulario::-webkit-scrollbar-thumb {
+
+  background-color: rgb(3, 78, 153);
+  border-radius: 50px;
+  border: 2px solid rgb(3, 78, 153);
+}

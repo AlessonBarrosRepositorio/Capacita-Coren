@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css" />
+  <script src="logica.js"></script>
+
+  <title>
+    Capacita Coren
+  </title>
+
+</head>
+
+<body>
+  <header class="cabecalho">
+    <div class="imagem-top">
+      <img class="capacita-logo" id="capacitaLogo" src="header_capacita.png" alt="">
+      <img class="coren-logo" id="corenLogo" src="./header_coren.jpg" alt="">
+    </div>
+  </header>
+  <main>
+    <div class="background"></div>
+    <div class="enrollment">
+      <p>Inscrição</p>
+      <a id="voltar" href="/eventos/pag_eventos.html">Voltar</a>
+    </div>
+    <div class="container">
+
+      
+
+      <div class="blocoEsquerda" id="esquerda">
+
+        <div class="formularioP">
+          <form class="formulario" novalidate="" method="post">
+            <div class="formleft">
+              <div class="item" id="divCpf">
+                <label for="cpf" id="campo" class="form-label">CPF*</label>
+                <input type="text" name="itemObrigatorioCpf" class="form-control" id="itemObrigatorioCpf" required
+                  placeholder="___.___.___-__" maxlength="14" oninput="formatarCPF(this), botao(), cpf(), validarCpf()">
+                <span id="cpf-error" style="color: red;"></span>
+              </div>
+
+              <div class="item">
+                <label for="categoria" class="form-label">Categoria*</label>
+                <select class="form-select" id="itemObrigatorioCategoria" required
+                  oninput="botao(), mostrarErroOuNaoCategoria()">
+                  <option value="escolha">-- Escolha sua categoria --</option>
+                  <option value="enfermeiro">Enfermeiro</option>
+                  <option value="tecnico"> Técnico de enfermagem</option>
+                  <option value="auxiliar">Auxiliar de enfermagem</option>
+                  <option value="academico">Acadêmico de enfermagem</option>
+                </select>
+                <span id="categoria-error" style="color: red;"></span>
+              </div>
+
+              <div class="item" id="nome">
+                <label for="nome" class="form-label">Nome*</label>
+                <input type="text" class="form-control" id="itemObrigatorioNome" placeholder="Nome Completo" required
+                  oninput="botao(), mostrarErroOuNaoNome()">
+                <span id="nome-error" style="color: red;"></span>
+              </div>
+
+              <div class="item">
+                <label for="email" class="form-label">E-mail</label>
+                <input type="email" class="form-control" id="itemNaoObrigatorio" placeholder="email@exemplo.com">
+              </div>
+
+              <div class="item">
+                <label for="address" class="form-label">Coren*</label>
+                <input type="text" class="form-control" id="itemObrigatorioCoren" maxlength="30"
+                  oninput="botao(), mostrarErroOuNaoCoren()">
+              </div>
+              <span id="coren-error" style="color: red;"></span>
+
+              <div class="item">
+                <label for="address1" class="form-label">UF Coren*</label>
+                <select class="form-select" id="itemObrigatorioUF" required oninput="botao(), mostrarErroOuNaoUFCoren()">
+                  <option value="selecione">-- Selecione a UF do seu COREN --</option>
+                  <option value="ac">AC</option>
+                  <option value="al">AL</option>
+                  <option value="am">AM</option>
+                  <option value="ap">AP</option>
+                  <option value="ba">BA</option>
+                  <option value="ce">CE</option>
+                  <option value="df">DF</option>
+                  <option value="ef">EF</option>
+                  <option value="go">GO</option>
+                  <option value="ma">MA</option>
+                  <option value="mg">MG</option>
+                  <option value="mt1">MT</option><!--rever-->
+                  <option value="mt2">MT</option>
+                  <option value="pa">PA</option>
+                  <option value="pb">PB</option>
+                  <option value="pe">PE</option>
+                  <option value="pi">PI</option>
+                  <option value="pr">PR</option>
+                  <option value="rj">RJ</option>
+                  <option value="rn">RN</option>
+                  <option value="ro">RO</option>
+                  <option value="rr">RR</option>
+                  <option value="rs">RS</option>
+                  <option value="sc">SC</option>
+                  <option value="se">SE</option>
+                  <option value="sp">SP</option>
+                  <option value="to">TO</option>
+                </select>
+                <span id="ufCoren-error" style="color: red;"></span>
+              </div>
+
+              
+                <div class="item" id="divCelular">
+                  <label for="country" class="form-label">Celular (DDD e telefone)*</label>
+                  <input type="text" class="form-control" id="itemObrigatorioCelular" required placeholder="(__)_____-____"
+                    value="" maxlength="14" oninput="formatarCelular(this), botao(), mostrarErroOuNaoCelular()">
+                  <span id="celular-error" style="color: red;"></span>
+                </div>
+
+                <div class="item" id="divTelefone">
+                  <label for="country" class="form-label">Telefone comercial (DDD e telefone)*</label>
+                  <input type="text" class="form-control" id="itemObrigatorioTelefone" required placeholder="(__)_____-____"
+                    value="" maxlength="14" oninput="formatarCelular(this), botao(), mostrarErroOuNaoTelefone()">
+                  <span id="telefone-error" style="color: red;"></span>
+                </div>
+            </div>
+            <div class="formright">
+              <div class="item" id="divEndereco">
+                <label for="country" class="form-label">Endereço* - Logradouro (rua, avenida etc)</label>
+                <input type="text" class="form-control" id="itemObrigatorioEndereco" maxlength="100" required
+                  oninput="botao(), mostrarErroOuNaoEndereco()">
+                <span id="endereco-error" style="color: red;"></span>
+              </div>
+
+              <div class="item" id="divNumero">
+                <label for="country" class="form-label">Número*</label>
+                <input type="text" class="form-control" id="itemObrigatorioNumero" value="" required="11" maxlength="10"
+                  oninput="botao(), mostrarErroOuNaoNumero()">
+                <span id="numero-error" style="color: red;"></span>
+              </div>
+
+              <div class="item" id="divComplemento">
+                <label for="country" class="form-label">Complemento</label>
+                <input type="text" class="form-control" maxlength="50" id="itemNaoObrigatorio">
+              </div>
+
+              <div class="item" id="divBairro">
+                <label for="country" class="form-label">Bairro*</label>
+                <input type="text" class="form-control" id="itemObrigatorioBairro" maxlength="50" required
+                  oninput="botao(), mostrarErroOuNaoBairro()">
+                <span id="bairro-error" style="color: red;"></span>
+              </div>
+
+              <div class="item" id="divCidade">
+                <label for="country" class="form-label">Cidade*</label>
+                <input type="text" class="form-control" id="itemObrigatorioCidade" maxlength="50" required
+                  oninput="botao(), mostrarErroOuNaoCidade()">
+                <span id="cidade-error" style="color: red;"></span>
+              </div>
+
+              <div class="item" id="divUF2">
+                <label for="uf" class="form-label">UF*</label>
+                <select class="form-select" id="itemObrigatorioUF2" required oninput="botao(), mostrarErroOuNaoUF2()">
+                  <option value="selecione">-- Selecione --</option>
+                  <option value="ac">AC</option>
+                  <option value="al">AL</option>
+                  <option value="am">AM</option>
+                  <option value="ap">AP</option>
+                  <option value="ba">BA</option>
+                  <option value="ce">CE</option>
+                  <option value="df">DF</option>
+                  <option value="ef">EF</option>
+                  <option value="go">GO</option>
+                  <option value="ma">MA</option>
+                  <option value="mg">MG</option>
+                  <option value="mt1">MT</option>
+                  <option value="mt2">MT</option>
+                  <option value="pa">PA</option>
+                  <option value="pb">PB</option>
+                  <option value="pe">PE</option>
+                  <option value="pi">PI</option>
+                  <option value="pr">PR</option>
+                  <option value="rj">RJ</option>
+                  <option value="rn">RN</option>
+                  <option value="ro">RO</option>
+                  <option value="rr">RR</option>
+                  <option value="rs">RS</option>
+                  <option value="sc">SC</option>
+                  <option value="se">SE</option>
+                  <option value="sp">SP</option>
+                  <option value="to">TO</option>
+                </select>
+                <span id="uf2-error" style="color: red;"></span>
+              </div>
+
+              <div class="item" id="divCep">
+                <label for="country" class="form-label">CEP*</label>
+                <input type="text" class="form-control" id="itemObrigatorioCep" required placeholder="_____-___" value=""
+                  maxlength="9" oninput="botao(), formatarCEP(this), mostrarErroOuNaoCep()">
+                <span id="cep-error" style="color: red;"></span>
+              </div>
+
+              <div class="item" id="divEmpregado">
+                <label for="empregado" meta="gduwgfuywef" class="form-label">Está empregado?*</label>
+                <select class="form-select" id="itemObrigatorioEmpregado" required
+                  oninput="botao(), mostrarErroOuNaoEmpregado()">
+                  <option value="selecione">-- Selecione --</option>
+                  <option value="sim">Sim</option>
+                  <option value="nao">Não</option>
+                </select>
+                <span id="empregado-error" style="color: red;"></span>
+              </div>
+
+            </div>
+
+          </form>
+        </div>
+
+        <div class="itemBotao" id="botao">
+          <input type="submit" id="enviar" class="botaoEnviar" title="Só será ativado após preencher os campos requeridos" value="Enviar" style="background-color: none;"
+            disabled/>
+        </div>
+
+      </div>
+
+
+      <div class="blocoDireita" id="direita">
+        <script src="logica_inicializar.js"></script>
+      </div>      
+
+    </div>
+
+
+
+
+  </main>
+  <footer class="rodape">
+    <p class="mb-1">© Coren-RJ</p>
+  </footer>
+
+
+
+</body>
+
+</html>

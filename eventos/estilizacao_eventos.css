@@ -1,0 +1,173 @@
+.eventos{
+    text-align: center;
+    background-color:#1AA8A4;
+    padding-top: 1%;
+    padding-bottom: 1rem;
+    margin-top: 2%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 200%;
+    color: white;
+}
+
+.cursos{
+    text-align: center;
+    color: rgb(3, 78, 153);
+    font-size: 200%;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+
+header {
+  padding-top: 0.5rem;
+}
+
+#corenLogo{
+  padding-left: 3%;
+  padding-top: 1%;
+}
+
+#capacitaLogo{
+  padding-top: 1%;
+  float: left;
+  padding-left: 1%;
+}
+
+.dado:hover {
+    background-color: #1AA8A4;
+}
+
+.claro{
+    background-color: #DFE6EB;
+    color: #2AABA7;
+    font-weight: normal;
+    font-size: 200%;
+}
+
+.escuro{
+    background-color: #CCD1D5;
+    color: #2AABA7;
+    font-weight: normal;
+    font-size: 200%;
+}
+
+#inscreva-se{
+    background-color: rgb(3, 78, 153);
+    color: white;
+    font-size: 200%;
+}
+
+.flexbox{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 2rem;
+    margin-left: 5rem;
+    margin-right: 5rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
+}
+
+.linha{
+    
+}
+
+.container {
+  overflow-y:scroll; 
+  
+}
+
+.container::-webkit-scrollbar {
+
+  width: 12px;               /* width of the entire scrollbar */
+}
+.container::-webkit-scrollbar-track {
+  background: #ccc;        /* color of the tracking area */
+}
+
+.container::-webkit-scrollbar-thumb {
+  
+  background-color: #6c63ff;    /* color of the scroll thumb */
+  border-radius: 50px;       /* roundness of the scroll thumb */
+  border: 3px solid #ccc;  /* creates padding around scroll thumb */
+}
+
+div {
+    display: block;
+}
+
+.eventos{
+    text-align: center;
+    background-color:#1AA8A4;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    margin-top: 2rem;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 200%;
+    color: white;
+  }
+
+  .cursos{
+      text-align: center;
+      color: rgb(3, 78, 153);
+      font-size: 200%;
+      margin-top: 1.5rem;
+      margin-bottom: 1.5rem;
+  }
+
+  .linhas{
+    border-top: 0.13rem solid black;
+  }
+
+  .bloco{
+    background-color: rgb(3, 78, 153);
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    text-align: center;
+    border: inherit;
+    border-radius: 1rem;
+    margin-top: 0.5rem;
+    
+  }
+
+  .textoBloco{
+    color: white;
+  }
+
+  header{
+    padding-top: 0.5rem;
+  }
+
+  main{
+   
+    background-image: url("imagem_projeto.jpg");
+    background-attachment: fixed;
+    background-size: 100% 100%;
+  }
+
+  .inscrevase{
+    text-decoration: none;
+    border: 0.1rem;
+    border-style: double;
+    border-color: black;
+    color: black;
+    border-radius: 1rem;
+    padding: 0.4rem;
+    color: white;
+    background-color: rgb(3, 78, 153);
+  }
+
+  .inscrevase:hover{
+    color: black;
+    background-color: grey;
+  }
+
+  .botao{
+    margin: auto;
+  }
+
+  #tudo{
+    margin-bottom: 1rem;
+    border-radius: 2rem;
+  }
